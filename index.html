@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Predicción del Día</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Bienvenido</h1>
+
+      <!-- Input para ingresar el nombre -->
+      <label for="name">Ingresa tu nombre:</label>
+      <input type="text" id="name" placeholder="Escribe tu nombre..." />
+      <button onclick="saveName()">Guardar Nombre</button>
+
+      <p id="greeting"></p>
+
+      <!-- Input para ingresar la condición del clima -->
+      <label for="weather">¿Cómo está el clima hoy?</label>
+      <input type="text" id="weather" placeholder="Ej. Soleado, Lluvioso..." />
+      <button onclick="generatePrediction()">Obtener predicción</button>
+
+      <p id="weather-condition"></p>
+      <p id="prediction"></p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
